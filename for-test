@@ -1,0 +1,15 @@
+pipeline {
+    agent {
+		node {
+			label "slave1"
+		}
+	}
+
+    stages {
+        stage('test') {
+            steps {
+                echo 'this is for test enviornment'
+            }
+        }
+    }
+}
