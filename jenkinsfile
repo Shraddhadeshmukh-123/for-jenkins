@@ -3,10 +3,10 @@ pipeline {
 		node {
 			label "slave1"
 		}
+       }
 		parameters {
 		  choice(name: 'CHOICE', choices: ['test'], description: 'Pick something')
 		  }
-	}
 
     stages {
         stage('test') {
